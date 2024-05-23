@@ -560,6 +560,24 @@ class instance extends instance_skel {
 				callback: (action) => {
 					this.issueCommand("M");
 				}
+			},
+			'toggleSigGen':{
+				label: 'Toggle Signal Generator',
+				callback: (action) => {
+					this.issueCommand('G');
+				}
+			},
+			'captureTrace':{
+				label: 'Capture Trace',
+				callback: (action) => {
+					this.issueCommand('space');
+				}
+			},
+			'captureAll':{
+				label: 'Capture All',
+				callback: (action) => {
+					this.issueCommand('shift + space');
+				}
 			}
 		});
 	}
